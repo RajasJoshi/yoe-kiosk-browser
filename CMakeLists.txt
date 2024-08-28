@@ -3,7 +3,7 @@ project(yoe-kiosk-browser LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick WebView)
+find_package(Qt5 REQUIRED COMPONENTS Core Gui Qml Quick WebView)
 
 qt_add_executable(yoe-kiosk-browser
     main.cpp
@@ -22,7 +22,7 @@ set(qml_resource_files
     "main.qml"
 )
 
-qt6_add_resources(yoe-kiosk-browser "qml"
+qt5_add_resources(yoe-kiosk-browser "qml"
     PREFIX
         "/"
     BASE
